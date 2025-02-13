@@ -6,7 +6,8 @@ export class App {
     config.title = 'Router Test';
     config.map([
       { route: ['','Home'], name: 'home', moduleId : PLATFORM.moduleName('index'), title:'Home' },
-      { route: 'about', name: 'about', moduleId : PLATFORM.moduleName('about'), title:'Home' }
+      { route: 'about', name: 'about', moduleId : PLATFORM.moduleName('about'), title:'About' },
+      { route: 'post/:slug', name: 'post', moduleId : PLATFORM.moduleName('post'), title:'View Posts' }
 
     ]);
   }
